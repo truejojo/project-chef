@@ -14,7 +14,7 @@
     @error 'Value #{$size} is not in the map or the number has not an unit!';
   }
 
-  @media sreen and (min-width: $breakpoint) {
+  @media screen and (min-width: $breakpoint) {
     @content;
   }
 }

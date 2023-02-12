@@ -1,0 +1,11 @@
+@use "../abstracts/" as *;
+
+.even-columns {
+  display: grid;
+  gap: 1.5rem;
+  justify-content: center;
+
+  @include mq(630px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}

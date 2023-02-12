@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.site-logo {
+  width: 2.5rem;
+}
+.site-nav-ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  padding-block: 1rem 3rem;
+  list-style: none;
+
+  a {
+    font-family: $ff-serif;
+    color: clr(neutral, 100);
+    text-decoration: none;
+    padding: 1rem;
+
+    &:hover {
+      color: clr(primary, 400);
+      text-decoration: underline;
+    }
+  }
+}

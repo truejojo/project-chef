@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+.site-header {
+  background: clr(neutral, 900);
+  background-image: url("../../assets/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 1rem 15rem;
+}

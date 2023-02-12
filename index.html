@@ -4,53 +4,229 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/sass/style.scss" />
+    <title>Project: Chef</title>
   </head>
   <body>
-    <div>
-      <h2>sass</h2>
-      <h3>abstracts</h3>
-      <ul>
-        <li>_breakpoints.scss</li>
-        <li>_functions.scss</li>
-        <li>_mixins.scss</li>
-        <li>_index.scss</li>
-      </ul>
-      <h3>base</h3>
-      <ul>
-        <li>_root.scss</li>
-        <li>_reset.scss</li>
-        <li>_general.scss</li>
-        <li>_index.scss</li>
-      </ul>
-      <h3>components</h3>
-      <ul>
-        <li>_forms.scss</li>
-        <li>_buttons.scss</li>
-        <li>_navigation.scss</li>
-        <li>_index.scss</li>
-      </ul>
-      <h3>layout</h3>
-      <ul>
-        <li>_single-column.scss</li>
-        <li>_with-sidebar.scss</li>
-        <li>_index.scss</li>
-      </ul>
-      <h3>utilities</h3>
-      <ul>
-        <li>_colors.scss</li>
-        <li>_text.scss</li>
-        <li>_spacing.scss</li>
-        <li>_index.scss</li>
-      </ul>
-      <h3>vendor</h3>
-      <ul>
-        <li>_prism.scss</li>
-        <li>_index.scss</li>
-      </ul>
-      <h2>main.scss</h2>
-    </div>
+    <header class="site-header text-center">
+      <div class="container content">
+        <nav class="site-nav">
+          <a href="banner">
+            <img class="site-logo" src="./assets/logo.svg" alt=""
+          /></a>
+          <ul class="site-nav-ul">
+            <li><a href="#about">About</a></li>
+            <li><a href="#meals">Meals</a></li>
+            <li>
+              <a href="#testimonials">Testimonials</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="site-title fs-800 clr-neutral-100 margin-block-end-600">
+          Homecooked meals<br />
+          delivered straight to your door
+        </h1>
+        <div class="btn-wrapper">
+          <button class="button primary">Place Order</button>
+          <button class="button">More Info</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="banner" class="banner">
+        <div class="container">
+          <div class="even-columns">
+            <img class="img" src="./assets/about.jpg" alt="">
+            <div class="content">
+              <header class="padding-block-end-400">
+                <h2
+                  class="title | clr-primary-400 fs-600 padding-block-end-100"
+                >
+                  This is a nice big heading
+                </h2>
+                <p class="subtitle | text-uppercase">
+                  This is a subhead which mentions some interesting things
+                </p>
+              </header>
+                <h3 class="text-uppercase clr-neutral-900">
+                  This is a subtitle
+                </h3>
+                <div class="flow">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eveniet quo quae rerum in.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Culpa consequuntur assumenda modi similique eum excepturi
+                    distinctio.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about | bg-neutral-200 text-center">
+        <div class="container">
+          <header class="padding-block-end-700">
+            <h2 class="title | clr-primary-400 fs-600 padding-block-end-200">
+              This is a nice big heading
+            </h2>
+            <p class="subtitle | text-uppercase">
+              This is a subhead which mentions some interesting things
+            </p>
+          </header>
+
+          <div class="grid-layout">
+            <article class="article">
+              <h3 class="text-uppercase clr-neutral-900">This is a subtitle</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eveniet quo quae rerum in eius consequuntur!
+              </p>
+            </article>
+
+            <article class="article">
+              <h3 class="text-uppercase clr-neutral-900">This is a subtitle</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eveniet quo quae rerum in eius consequuntur!
+              </p>
+            </article>
+
+            <article class="article">
+              <h3 class="text-uppercase clr-neutral-900">This is a subtitle</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eveniet quo quae rerum in eius consequuntur!
+              </p>
+            </article>
+
+            <article class="article">
+              <h3 class="text-uppercase clr-neutral-900">This is a subtitle</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Eveniet quo quae rerum in eius consequuntur!
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="meals" class="meals bg-neutral-900 clr-neutral-200">
+        <div class="container">
+          <header class="text-center padding-block-end-700">
+            <h2 class="title | fs-600 padding-block-end-100">
+              This is a nice big heading
+            </h2>
+            <p class="subtitle | text-uppercase">
+              This is a subhead which mentions some interesting things
+            </p>
+          </header>
+
+          <div class="grid-layout">
+            <article class="article">
+              <img class="img" src="./assets/meal-01.jpg" alt="" />
+              <div class="info-box padding-200">
+                <h3 class="text-title | text-uppercase">This is a subtitle</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </article>
+
+            <article class="article">
+              <img class="img" src="./assets/meal-02.jpg" alt="" />
+              <div class="info-box padding-200">
+                <h3 class="text-title | text-uppercase">This is a subtitle</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </article>
+
+            <article class="article">
+              <img class="img" src="./assets/meal-03.jpg" alt="" />
+              <div class="info-box padding-200">
+                <h3 class="text-title | text-uppercase">This is a subtitle</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="testimonials | text-center">
+        <div class="container">
+          <header>
+            <h2 class="title | clr-primary-400 fs-600 margin-block-end-700">
+              This is a nice big heading
+            </h2>
+          </header>
+          <div class="grid-layout">
+            <article class="article flow bg-neutral-200">
+              <header>
+                <img src="./assets/testimonial-01.jpg" alt="" />
+              </header>
+              <div class="commentar padding-inline-400">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestiae soluta nostrum nobis, recusandae commodi rerum
+                  exercitationem, fugit suscipit consectetur assumenda
+                </p>
+              </div>
+              <footer class="info-footer | padding-block-100">
+                <h4 class="author | clr-primary-400">John Deer</h4>
+                <p class="country">Manager at FoodCo</p>
+              </footer>
+            </article>
+            <article class="article flow bg-neutral-200">
+              <header>
+                <img src="./assets/testimonial-02.jpg" alt="" />
+              </header>
+              <div class="commentar padding-inline-400">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestiae soluta nostrum nobis, recusandae commodi rerum
+                  exercitationem, fugit suscipit consectetur assumenda
+                </p>
+              </div>
+              <footer class="info-footer | padding-block-100">
+                <h4 class="author | clr-primary-400">John Deer</h4>
+                <p class="country">Manager at FoodCo</p>
+              </footer>
+            </article>
+            <article class="article flow bg-neutral-200">
+              <header>
+                <img src="./assets/testimonial-03.jpg" alt="" />
+              </header>
+              <div class="commentar padding-inline-400">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestiae soluta nostrum nobis, recusandae commodi rerum
+                  exercitationem, fugit suscipit consectetur assumenda
+                </p>
+              </div>
+              <footer class="info-footer | padding-block-100">
+                <h4 class="author | clr-primary-400">John Deer</h4>
+                <p class="country">Manager at FoodCo</p>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="site-footer text-center bg-neutral-900 clr-neutral-200 padding-block-900"
+    >
+      <p>A good place for some basic footer information</p>
+      <p>C 2022 Personal Chef Services</p>
+      <p>155 Boulevard Anywhere Montreal Quebec, J15 159 | 123-555-1234</p>
+    </footer>
   </body>
 </html>

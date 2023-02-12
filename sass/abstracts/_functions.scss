@@ -19,7 +19,7 @@
   }
 }
 
-@function size($space-size) {
+@function space($space-size) {
   @if map.has-key($space-sizes, $space-size) {
     @return map.get($space-sizes, $space-size);
   } @else {
